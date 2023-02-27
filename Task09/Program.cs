@@ -10,3 +10,6 @@ else
 {
     Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
 }
+
+int result = firstDigit > secondDigit ? firstDigit : secondDigit;
+Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
