@@ -1,22 +1,31 @@
 ﻿Console.WriteLine("Введите число a");
-int numberA = Convert.ToInt32(Console.ReadLine());
+int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число b");
-int numberB = Convert.ToInt32(Console.ReadLine());
+int number2 = Convert.ToInt32(Console.ReadLine());
 
-int result = numberA % numberB;
-if (result == 0)
+// int result = numA % numB;
+// if (result == 0)
+// {
+//    Console.WriteLine($"Число {numA} кратно числу {numB}"); 
+// }
+// else
+// {
+//    Console.WriteLine($"Число {numA} некратно числу {numB}, остаток от деления {result}");  
+// }
+
+
+int multyPlicity = MultyPlicity(number1, number2);
+if (multyPlicity == 0)
 {
-   Console.WriteLine($"Число {numberA} кратно числу {numberB}"); 
+   Console.WriteLine($"Число {number1} кратно числу {number2}"); 
 }
 else
 {
-   Console.WriteLine($"Число {numberA} некратно числу {numberB}, остаток от деления {result}");  
+   Console.WriteLine($"Число {number1} некратно числу {number2}, остаток от деления {multyPlicity}");  
 }
 
-
-int Multiplicity(int numA, int numB)
+int MultyPlicity(int num1, int num2)
 {
-    return numA % numB;
+    return num1 % num2;
 }
-
 
