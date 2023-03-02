@@ -11,7 +11,7 @@ int yCoordinate2 = Convert.ToInt32(Console.ReadLine());
 
 
 double length = Length(xCoordinate1, yCoordinate1, xCoordinate2, yCoordinate2);
-Console.WriteLine(Math.Round(length, 2, MidpointRounding.ToZero));
+Console.WriteLine($"Расстояние между точками равно - {Math.Round(length, 2, MidpointRounding.ToZero)}");
 
 
 
