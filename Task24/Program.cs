@@ -13,11 +13,11 @@ else
 
 int SumNumbers(int num)
 {
-    int sum = 0;
+    int result = 0;
     for (int i = 1; i <= num; i++)
     {
-        sum = sum + i;
+        result = result + i;
     }
-    return sum;
+    return result;
 }
 
