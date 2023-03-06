@@ -1,7 +1,7 @@
 ﻿Console.WriteLine("Введите целое положительное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number > 1)
+if (number > 0)
 {
     int fact = Fact(number);
     Console.WriteLine($"Факториал от единицы до {number} = {fact}");
