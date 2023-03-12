@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Введите размер массива - любое натуральное число: ");
 int sizeArray = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите любое натуральное число в диапозоне до 10: ");
+Console.WriteLine("Введите натуральное число, которое будем искать в массиве в диапозоне до 10: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int[] array = CreateArray(sizeArray, 0, 10);
@@ -35,11 +35,10 @@ void PrintArray(int[] arr)
 
 bool PresenceNumber(int[] arr, int num)
 {
-    int check = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i] == num) check = check + 1;
+        if(arr[i] == num) return true;
     }
-    return check > 0;
+    return false;
 }
 
